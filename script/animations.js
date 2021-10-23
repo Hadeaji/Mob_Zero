@@ -74,3 +74,16 @@ $("#tres").click(function () {
 // $(button).addClass("blurOnShow")
 
 // $("p").toggleClass("main");
+
+
+
+
+
+
+
+const el = document.querySelector("#p1");
+
+el.addEventListener("mousemove", (e) => {
+    el.style.backgroundPositionX = -e.offsetX / 10 + "px";
+    el.style.backgroundPositionY = -e.offsetY / 10 + "px";
+});
