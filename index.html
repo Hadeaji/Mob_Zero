@@ -12,6 +12,7 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./style/part.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
@@ -92,7 +93,7 @@
             </metadata>
             <g
               transform="translate(0.000000,915.000000) scale(0.100000,-0.100000)"
-              fill="#000000"
+              fill="#f5f5f5"
               stroke="none"
             >
               <path
@@ -139,7 +140,7 @@
             </metadata>
             <g
               transform="translate(0.000000,273.000000) scale(0.100000,-0.100000)"
-              fill="#000000"
+              fill="#f5f5f5"
               stroke="none"
             >
               <path
@@ -243,9 +244,49 @@
         </div>
 
         <div class="page" id="p3">
-          <section class="para">
-            <span class="title">Nokia</span>
-          </section>
+          <div id="particles">
+            <div id="webcoderskull">
+              <h1>Nokia</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Explicabo dolore nisi autem ipsum? Commodi enim quibusdam ipsam
+                quisquam, quos culpa molestias provident neque alias ipsum
+                beatae quod explicabo, perferendis nihil!
+              </p>
+              <div
+                class="buttonsHolder"
+                style="position: relative; width: calc(100% - 99px)"
+              >
+                <a
+                  href="http://10.247.255.60:3000/d/POWfvXAmkE/mobily-nokia-live-network-view?tab=visualization&orgId=1&refresh=1m"
+                  target="_blank"
+                  class="btn"
+                  style="position: relative; z-index: 11"
+                >
+                  <span>Nokia Dashboards</span></a
+                >
+                <a
+                  href="https://10.73.65.86:8443/topology/#/"
+                  target="_blank"
+                  class="btn"
+                  style="position: relative; z-index: 11"
+                >
+                  <span> Nokia E2E Topology </span>
+                </a>
+              </div>
+            </div>
+
+            <div
+              id="move"
+              style="
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 10;
+                top: 0;
+              "
+            ></div>
+          </div>
         </div>
       </div>
     </div>
@@ -258,5 +299,6 @@
       </div>
     </div> -->
     <script src="script/animations.js"></script>
+    <script src="./script/part.js"></script>
   </body>
 </html>

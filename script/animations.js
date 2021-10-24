@@ -80,7 +80,6 @@ $("#tres").click(function () {
 
 
 
-
 const el = document.querySelector("#p1");
 
 el.addEventListener("mousemove", (e) => {

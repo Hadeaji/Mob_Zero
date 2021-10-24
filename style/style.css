@@ -57,6 +57,8 @@ ul {
   width: 99px;
   padding: 0;
   text-align: center;
+  background: #1e1e1e;
+  color: #1e1e1e;
 }
 
 ul .icon:hover {
@@ -191,6 +193,7 @@ ul .icon:hover {
   margin-bottom: 25px;
   transform: rotate(340deg);
   animation: example 3s infinite;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
 }
 
 .twoo {
@@ -202,6 +205,7 @@ ul .icon:hover {
   transform: rotate(340deg);
   animation: example 3s infinite;
   animation-delay: 0.5s;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
 }
 
 .threee {
@@ -213,6 +217,7 @@ ul .icon:hover {
   transform: rotate(340deg);
   animation: example 3s infinite;
   animation-delay: 1s;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
 }
 
 @keyframes example {
