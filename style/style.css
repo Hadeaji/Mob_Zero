@@ -42,6 +42,12 @@ body,
   right: 0;
   transition: none;
 }
+#Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 a {
   text-decoration: none;
@@ -63,6 +69,10 @@ ul {
 
 ul .icon:hover {
   opacity: 0.5;
+}
+
+#first {
+  margin-bottom: 55px;
 }
 
 .page {
@@ -91,6 +101,10 @@ ul .icon:hover {
 }
 #p3 {
   background: gold;
+}
+
+#p4 {
+  background: whitesmoke;
 }
 
 .showSection {

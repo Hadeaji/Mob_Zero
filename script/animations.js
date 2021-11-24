@@ -1,10 +1,10 @@
 'use strict';
 
 
-const sections = ['p2', 'p3'];
-const icons = ['uno', 'dos', 'tres'];
+const sections = ['p2', 'p3', 'p4'];
+const icons = ['first', 'sec', 'third', 'fourth'];
 
-$("#uno").click(function () {
+$("#first").click(function () {
     sections.forEach(element => {
         if ($(`#${element}`).hasClass("showSection")) {
             $(`#${element}`).toggleClass("showSection");
@@ -23,7 +23,7 @@ $("#uno").click(function () {
     });
 });
 
-$("#dos").click(function () {
+$("#sec").click(function () {
     sections.forEach(element => {
         if ($(`#${element}`).hasClass("showSection")) {
             $(`#${element}`).toggleClass("showSection");
@@ -43,10 +43,10 @@ $("#dos").click(function () {
             $(`#${element}`).toggleClass("minIcon");
         }
     });
-    $("#dos").addClass("capIcon");
+    $("#sec").addClass("capIcon");
 });
 
-$("#tres").click(function () {
+$("#third").click(function () {
     sections.forEach(element => {
         if ($(`#${element}`).hasClass("showSection")) {
             $(`#${element}`).toggleClass("showSection");
@@ -66,9 +66,32 @@ $("#tres").click(function () {
             $(`#${element}`).toggleClass("minIcon");
         }
     });
-    $("#tres").addClass("capIcon");
+    $("#third").addClass("capIcon");
 });
 
+
+$("#fourth").click(function () {
+    sections.forEach(element => {
+        if ($(`#${element}`).hasClass("showSection")) {
+            $(`#${element}`).toggleClass("showSection");
+        }
+    });
+
+    $("#p4").toggleClass("showSection");
+
+    $("#p1").addClass("blurOnShow");
+
+    icons.forEach(element => {
+        if (($(`#${element}`).hasClass("capIcon"))) {
+            $(`#${element}`).toggleClass("capIcon");
+            $(`#${element}`).toggleClass("minIcon");
+        }
+        if (!($(`#${element}`).hasClass("minIcon"))) {
+            $(`#${element}`).toggleClass("minIcon");
+        }
+    });
+    $("#fourth").addClass("capIcon");
+});
 // $( "#mydiv" ).hasClass( "showSection" )
 
 // $(button).addClass("blurOnShow")
